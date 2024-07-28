@@ -1,6 +1,16 @@
 import Link from "next/link";
-import { FaEnvelope, FaFacebook, FaLinkedin, FaPhone } from "react-icons/fa";
-import { FaSquareWhatsapp, FaSquareXTwitter } from "react-icons/fa6";
+import {
+  FaCaretRight,
+  FaEnvelope,
+  FaFacebook,
+  FaLinkedin,
+  FaPhone,
+} from "react-icons/fa";
+import {
+  FaLocationDot,
+  FaSquareWhatsapp,
+  FaSquareXTwitter,
+} from "react-icons/fa6";
 
 function Footer() {
   return (
@@ -20,34 +30,34 @@ function Footer() {
           <div>
             <h2 className="font-medium mb-2">Company</h2>
             <ul className="text-gray-500 max-w-max">
-              <li className=" cursor-pointer hover:text-indigo-700 hover:underline transition-all">
-                About Us
+              <li className="flex items-center cursor-pointer hover:text-indigo-700 hover:underline transition-all">
+                <FaCaretRight /> About Us
               </li>
-              <li className=" cursor-pointer hover:text-indigo-700 hover:underline transition-all">
-                Contact Us
+              <li className="flex items-center cursor-pointer hover:text-indigo-700 hover:underline transition-all">
+                <FaCaretRight /> Contact Us
               </li>
-              <li className=" cursor-pointer hover:text-indigo-700 hover:underline transition-all">
-                Why Hire Us
+              <li className="flex items-center cursor-pointer hover:text-indigo-700 hover:underline transition-all">
+                <FaCaretRight /> Why Hire Us
               </li>
-              <li className=" cursor-pointer hover:text-indigo-700 hover:underline transition-all">
-                Terms and Conditions
+              <li className="flex items-center cursor-pointer hover:text-indigo-700 hover:underline transition-all">
+                <FaCaretRight /> Terms and Conditions
               </li>
             </ul>
           </div>
           <div>
             <h2 className="font-medium mb-2">Explore</h2>
             <ul className="text-gray-500 max-w-max">
-              <li className=" cursor-pointer hover:text-indigo-700 hover:underline transition-all">
-                Services
+              <li className="flex items-center cursor-pointer hover:text-indigo-700 hover:underline transition-all">
+                <FaCaretRight /> Services
               </li>
-              <li className=" cursor-pointer hover:text-indigo-700 hover:underline transition-all">
-                Pricing
+              <li className="flex items-center cursor-pointer hover:text-indigo-700 hover:underline transition-all">
+                <FaCaretRight /> Pricing
               </li>
-              <li className=" cursor-pointer hover:text-indigo-700 hover:underline transition-all">
-                Portfolio
+              <li className="flex items-center cursor-pointer hover:text-indigo-700 hover:underline transition-all">
+                <FaCaretRight /> Portfolio
               </li>
-              <li className=" cursor-pointer hover:text-indigo-700 hover:underline transition-all">
-                Our Team
+              <li className="flex items-center cursor-pointer hover:text-indigo-700 hover:underline transition-all">
+                <FaCaretRight /> Our Team
               </li>
             </ul>
           </div>
@@ -65,6 +75,10 @@ function Footer() {
               <li className="flex items-center gap-1">
                 <FaEnvelope className="text-orange-500" />
                 info@dreamleadagency.com
+              </li>
+              <li className="flex gap-1">
+                <FaLocationDot className="text-blue-700" />
+                Kashiahata, Dhunat, Bogra, Zip 5841, <br /> Dhaka, Bangladesh
               </li>
             </ul>
             <ul className="flex items-center gap-3 mt-2 text-2xl">

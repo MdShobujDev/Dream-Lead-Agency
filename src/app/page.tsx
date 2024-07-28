@@ -1,9 +1,9 @@
+import Hero from "@/components/HomePage/Hero";
+
 export default function Home() {
   return (
-    <section className="min-h-screen bg-gray-100">
-      <div className="max-w-7xl flex items-center justify-center h-screen">
-        <h1 className="text-4xl text-indigo-500 font-medium">Home Page</h1>
-      </div>
-    </section>
+    <>
+      <Hero />
+    </>
   );
 }

@@ -32,28 +32,29 @@ function Header() {
               Dream <span className="text-indigo-700">Lead Agency</span>
             </Link>
           </div>
-          <div className="min-[850px]:flex hidden gap-8 items-center">
-            <ul className="flex gap-5">
+          <div className="min-[900px]:flex hidden gap-8 items-center">
+            <div className="flex gap-5">
               {navItems.map((item) => (
-                <li
+                <Link
+                  href={item.link}
                   key={item.id}
-                  className={`hover:text-indigo-700 transition-all duration-300 text-sm font-medium ${
+                  className={` hover:text-indigo-700 transition-all duration-300 text-sm font-medium ${
                     pathname === item.link
                       ? "text-indigo-700 underline underline-offset-4"
                       : ""
                   }`}
                 >
-                  <Link href={item.link}>{item.name}</Link>
-                </li>
+                  {item.name}
+                </Link>
               ))}
-            </ul>
+            </div>
             <div className="bg-black text-white font-medium text-xs cursor-pointer p-3 rounded hover:bg-indigo-700 transition-all duration-300">
               <Link href={"/"}>GET 50 FOR FREE</Link>
             </div>
           </div>
           {/* toggole button  */}
           <div
-            className="min-[850px]:hidden block p-2 transition-all duration-300 ease-linear cursor-pointer text-xl"
+            className="min-[900px]:hidden block p-2 transition-all duration-300 ease-linear cursor-pointer text-xl"
             onClick={handleToggole}
           >
             {isToggole ? <FaXmark /> : <FaBarsStaggered />}
@@ -61,7 +62,7 @@ function Header() {
         </nav>
       </div>
       {/* // small screen nav bar */}
-      <div className="min-[850px]:hidden block relative">
+      <div className="min-[900px]:hidden block relative">
         <div
           className={`flex flex-col gap-5 bg-gray-100 absolute  top-0 ${
             isToggole ? "left-0 right-0" : "-left-96"
