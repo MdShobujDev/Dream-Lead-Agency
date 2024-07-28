@@ -1,12 +1,8 @@
 export default function Home() {
   return (
-    <section className=" min-h-screen">
-      <div className=" max-w-7xl ">
-        <h1>hello world</h1>
-
-        <h1 className=" bg-red-400 text-5xl font-bold text-center" id="hello">
-          hello
-        </h1>
+    <section className="min-h-screen bg-gray-100">
+      <div className="max-w-7xl flex items-center justify-center h-screen">
+        <h1 className="text-4xl text-indigo-500 font-medium">Home Page</h1>
       </div>
     </section>
   );
