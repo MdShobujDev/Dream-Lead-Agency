@@ -1,3 +1,4 @@
+import Link from "next/link";
 import {
   FaDatabase,
   FaEnvelope,
@@ -36,7 +37,7 @@ function Services() {
       id: 5,
       title: "Email Filtering",
       icon: <FaEnvelope />,
-      desc: "We Can Provide 100% Verified E-mail and Personal and Business Email List From Any Targeted -( Company, Niche, Industry, Title, Location, Keyword Related",
+      desc: "We Can Provide 100% Verified E-mail and Personal and Business Email List From Any Targeted -( Company, Niche, Industry, Title, Location, Keyword Related)",
     },
     {
       id: 6,
@@ -48,16 +49,17 @@ function Services() {
   return (
     <section className="max-w-7xl mx-auto px-5 py-14">
       <h1 className="text-3xl text-center font-medium mb-8">Our Services</h1>
-      <div className="grid min-[900px]:grid-cols-3 min-[500px]:grid-cols-2 grid-cols-1 gap-3">
+      <div className="grid min-[900px]:grid-cols-3 min-[550px]:grid-cols-2 grid-cols-1 gap-3">
         {servicesItems.map((item) => (
-          <div
+          <Link
+            href="/services"
             key={item.id}
-            className="flex flex-col gap-3 items-center border rounded-xl shadow p-5"
+            className="flex flex-col gap-3 items-center border rounded-xl shadow p-5 cursor-pointer hover:shadow-none transition-all duration-150 ease-linear"
           >
             <div className="text-3xl text-green-600">{item.icon}</div>
             <h2 className="text-xl font-medium text-center">{item.title}</h2>
             <p className="text-gray-600 text-center">{item.desc}</p>
-          </div>
+          </Link>
         ))}
       </div>
     </section>

@@ -14,7 +14,7 @@ import {
 
 function Footer() {
   return (
-    <footer className="bg-gray-50">
+    <footer className="bg-gray-50 shadow">
       <div className="max-w-7xl mx-auto p-6 flex flex-col justify-between gap-10 min-[950px]:flex-row">
         <div className="flex-[1_1_40%]">
           <Link href={"/"} className="font-bold text-2xl">
@@ -83,13 +83,13 @@ function Footer() {
             </ul>
             <ul className="flex items-center gap-3 mt-2 text-2xl">
               <li>
-                <FaFacebook className="text-blue-500 cursor-pointer" />
+                <FaFacebook className="text-blue-500 cursor-pointer transition-all duration-200 ease-linear hover:scale-[.9]" />
               </li>
               <li>
-                <FaLinkedin className="text-sky-600 cursor-pointer" />
+                <FaLinkedin className="text-sky-600 cursor-pointer transition-all duration-200 ease-linear hover:scale-[.9]" />
               </li>
               <li>
-                <FaSquareXTwitter className="cursor-pointer" />
+                <FaSquareXTwitter className="cursor-pointer transition-all duration-200 ease-linear hover:scale-[.9]" />
               </li>
             </ul>
           </div>
