@@ -48,7 +48,8 @@ function Footer() {
             <h2 className="font-medium mb-2">Explore</h2>
             <ul className="text-gray-500 max-w-max">
               <li className="flex items-center cursor-pointer hover:text-indigo-700 hover:underline transition-all">
-                <FaCaretRight /> Services
+                <FaCaretRight />
+                Our Services
               </li>
               <li className="flex items-center cursor-pointer hover:text-indigo-700 hover:underline transition-all">
                 <FaCaretRight /> Pricing
