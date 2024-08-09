@@ -26,19 +26,19 @@ function Header() {
     <>
       <div className="shadow">
         {/* big screen nav bar  */}
-        <nav className=" max-w-7xl mx-auto px-5 py-3 flex items-center justify-between gap-4">
+        <nav className=" max-w-7xl mx-auto px-5  flex items-center justify-between gap-4">
           <div>
             <Link href={"/"} className="font-bold text-2xl">
               Dream <span className="text-indigo-700">Lead Agency</span>
             </Link>
           </div>
-          <div className="min-[900px]:flex hidden gap-8 items-center">
-            <div className="flex gap-5">
+          <div className="min-[950px]:flex hidden gap-8 items-center">
+            <div className="flex ">
               {navItems.map((item) => (
                 <Link
                   href={item.link}
                   key={item.id}
-                  className={` hover:text-indigo-700 transition-all duration-300 text-sm font-medium ${
+                  className={` hover:text-indigo-700 px-3 hover:bg-indigo-50 py-5 transition-all duration-300 text-sm font-medium ${
                     pathname === item.link
                       ? "text-indigo-700 underline underline-offset-4"
                       : ""
@@ -54,7 +54,7 @@ function Header() {
           </div>
           {/* toggole button  */}
           <div
-            className="min-[900px]:hidden block p-2 transition-all duration-300 ease-linear cursor-pointer text-xl"
+            className="min-[950px]:hidden block p-2 transition-all duration-300 ease-linear cursor-pointer text-xl"
             onClick={handleToggole}
           >
             {isToggole ? <FaXmark /> : <FaBarsStaggered />}
@@ -62,7 +62,7 @@ function Header() {
         </nav>
       </div>
       {/* // small screen nav bar */}
-      <div className="min-[900px]:hidden block relative">
+      <div className="min-[950px]:hidden block relative">
         <div
           className={`flex flex-col gap-5 bg-gray-100 absolute  top-0 ${
             isToggole ? "left-0 right-0" : "-left-96"

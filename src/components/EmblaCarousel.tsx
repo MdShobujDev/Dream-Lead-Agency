@@ -38,12 +38,10 @@ const EmblaCarousel: React.FC<PropType> = ({ children }) => {
 
   return (
     <section className="w-full m-auto relative group">
-      <div className="overflow-hidden" ref={emblaRef}>
+      <div className=" overflow-hidden py-5" ref={emblaRef}>
         <div
-          className="flex gap-4"
+          className="flex gap-4 touch-pan-y touch-pinch-zoom mx-2"
           style={{
-            touchAction: "pan-y pinch-zoom",
-            marginLeft: "calc(2rem * -1)",
             WebkitBackfaceVisibility: "hidden",
             backfaceVisibility: "hidden",
             MozBackfaceVisibility: "hidden",
@@ -53,11 +51,11 @@ const EmblaCarousel: React.FC<PropType> = ({ children }) => {
         </div>
       </div>
 
-      <div className=" grid grid-cols-1 justify-between gap-5 mt-2 absolute top-0 bottom-0 left-4 right-4">
-        <div className=" flex gap-3 items-center justify-between  ">
-          <PrevButton onClick={onPrevButtonClick} disabled={prevBtnDisabled} />
-          <NextButton onClick={onNextButtonClick} disabled={nextBtnDisabled} />
-        </div>
+      <div className="flex items-center justify-center absolute top-0 bottom-0 -left-4">
+        <PrevButton onClick={onPrevButtonClick} disabled={prevBtnDisabled} />
+      </div>
+      <div className="flex items-center justify-center absolute top-0 bottom-0 -right-4">
+        <NextButton onClick={onNextButtonClick} disabled={nextBtnDisabled} />
       </div>
     </section>
   );
