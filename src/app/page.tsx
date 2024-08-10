@@ -2,6 +2,7 @@ import HappyClients from "@/components/HomePage/HappyClients";
 import Hero from "@/components/HomePage/Hero";
 import Parallax from "@/components/HomePage/Parallax";
 import Services from "@/components/HomePage/Services";
+import Card from "@/components/PricingCard/Card";
 import TeamMember from "@/components/TeamMember";
 
 export default function Home() {
@@ -9,6 +10,7 @@ export default function Home() {
     <>
       <Hero />
       <Services />
+      <Card />
       <Parallax />
       <HappyClients />
       <TeamMember />

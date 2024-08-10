@@ -16,7 +16,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${centraFonts.variable} font-centra text-primaryText`}>
+      <body
+        className={`${centraFonts.variable} font-centra text-primaryText scroll-smooth`}
+      >
         <Header />
         {children}
         <Footer />
