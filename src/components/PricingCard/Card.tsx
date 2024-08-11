@@ -16,7 +16,7 @@ function Card() {
           {/* =========================== */}
           {/* basic */}
           {/* =========================== */}
-          <div className=" p-[1px] bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 rounded-xl">
+          <div className=" p-[1px] bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 rounded-xl overflow-hidden">
             <div className=" bg-white  p-4 rounded-xl h-full flex flex-col justify-between">
               <h2 className=" font-medium mt-5">Basic</h2>
 
@@ -74,7 +74,7 @@ function Card() {
           {/* =========================== */}
           {/* advanced  */}
           {/* =========================== */}
-          <div className=" p-[1px] bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 rounded-xl ">
+          <div className=" p-[1px] bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 rounded-xl overflow-hidden">
             <div className=" bg-white  p-4 rounded-xl h-full w-full flex flex-col justify-between">
               <div className="flex w-full items-center justify-end ">
                 <div className="bg-violet-600/10  rounded">
@@ -140,7 +140,7 @@ function Card() {
           {/* =========================== */}
           {/* business  */}
           {/* =========================== */}
-          <div className=" p-[1px] bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 rounded-xl ">
+          <div className=" p-[1px] bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 rounded-xl overflow-hidden">
             <div className=" bg-white  p-4 rounded-xl h-full flex flex-col justify-between">
               <h2 className=" font-medium mt-5">Business</h2>
 
