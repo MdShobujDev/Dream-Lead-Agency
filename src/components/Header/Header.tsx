@@ -1,5 +1,7 @@
 "use client";
 
+import Logo from "@/../public/images/logo.png";
+import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
@@ -10,7 +12,7 @@ function Header() {
   const handleToggole = () => {
     setIsToggole(() => !isToggole);
   };
-  console.log(isToggole);
+
   const navItems = [
     { id: 1, name: "Home", link: "/" },
     { id: 2, name: "Services", link: "/services" },
@@ -24,12 +26,12 @@ function Header() {
 
   return (
     <>
-      <div className="shadow">
+      <div className="shadow-lg sticky top-0 bg-white  z-50">
         {/* big screen nav bar  */}
         <nav className=" max-w-7xl mx-auto px-5  flex items-center justify-between gap-4">
           <div>
             <Link href={"/"} className="font-bold text-2xl">
-              Dream <span className="text-indigo-700">Lead Agency</span>
+              <Image src={Logo} alt="Dream Lead Agency" width={90} />
             </Link>
           </div>
           <div className="min-[950px]:flex hidden gap-8 items-center">

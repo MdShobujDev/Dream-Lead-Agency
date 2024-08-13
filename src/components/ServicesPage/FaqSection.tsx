@@ -2,9 +2,9 @@
 import b2bvector from "@/../public/images/b2b-vector.svg";
 import { CaretRightOutlined } from "@ant-design/icons";
 import type { CollapseProps } from "antd";
-import { Collapse, theme } from "antd";
+import { Collapse, Skeleton, theme } from "antd";
 import Image from "next/image";
-import type { CSSProperties } from "react";
+import { Suspense, type CSSProperties } from "react";
 import {
   FaDatabase,
   FaEnvelope,
@@ -147,7 +147,9 @@ function FaqSection() {
           />
         </div>
         <div className="flwx-1 min-[900px]:block hidden">
-          <Image src={b2bvector} alt="b2b" width={500} height={500} />
+          <Suspense fallback={<Skeleton.Image active={true} />}>
+            <Image src={b2bvector} alt="b2b" width={500} height={500} />
+          </Suspense>
         </div>
       </div>
     </section>
